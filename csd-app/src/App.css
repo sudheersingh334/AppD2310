@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+form{
+  display: inline-block;
+  padding: 20px;
+  background-color: rgb(30, 210, 102);
+}
+form div{
+  margin: 15px;
+}
+form label{
+  display: inline-block;
+  width: 120px;
+}
+.profilePicPreview{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border: 2px solid black;
+}
+nav{
+  background-color: yellow;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+button{
+  background-color: yellow;
+  font-size: 1.2rem;
+}
+body{
+  background-color: gainsboro;
+}
