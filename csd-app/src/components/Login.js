@@ -10,7 +10,7 @@ let passwordInputRef = useRef();
 let navigate = useNavigate();
 let dispatch = useDispatch();
 
-axios.defaults.baseURL = 'http://localhost:4321';
+axios.defaults.baseURL = '';
 axios.defaults.headers.common['Authorization'] = localStorage.getItem("token");
 
 useEffect(()=>{
@@ -27,7 +27,7 @@ let validateLogin = async ()=>{
     body:dataTOSend,
   };
 
-let JSONData = await fetch("http://localhost:4321/login",reqOptions);
+let JSONData = await fetch("/login",reqOptions);
 
 let JSOData = await JSONData.json();
 
@@ -74,7 +74,7 @@ let validateCredentials = ()=>{
       body:dataTOSend,
     };
   
-  let JSONData = await fetch("http://localhost:4321/login",reqOptions);
+  let JSONData = await fetch("/login",reqOptions);
   
   let JSOData = await JSONData.json();
   
@@ -103,7 +103,7 @@ let validateToken = async()=>{
       body: dataTOSend,
     };
     
-    let JSONData = await fetch("http://localhost:4321/loginWithToken",reqOptions);
+    let JSONData = await fetch("/loginWithToken",reqOptions);
     
     let JSOData = await JSONData.json();
     

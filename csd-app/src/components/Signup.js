@@ -33,7 +33,7 @@ let onSignupUsingJSON = async()=>{
     headers:myHeader,
  };
 
-let JSONData = await fetch("http://localhost:4321/signup",reqOptions);
+let JSONData = await fetch("/signup",reqOptions);
 let JSOData = await JSONData.json();
 console.log(JSOData);
 };
@@ -58,7 +58,7 @@ dataTOSend.append("profilePic",profilePicInputRef.current.value);
    body:dataTOSend
  } 
 
- let JSONData = await fetch("http://localhost:4321/signup",reqOptions);
+ let JSONData = await fetch("/signup",reqOptions);
  let JSOData = await JSONData.json();
  console.log(JSOData);
 
@@ -87,7 +87,7 @@ let onSignupUsingFormData = async()=>{
     body:dataTOSend
    };
 
-   let JSONData = await fetch("http://localhost:4321/signup",reqOptions);
+   let JSONData = await fetch("/signup",reqOptions);
 
 
    let JSOData = await JSONData.json();

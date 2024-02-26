@@ -14,7 +14,7 @@ function Home() {
         <TopNavigation/>
         <h1>Welcome To Team india {storeObj.loginReducer.userDetails.firstName} {""} {storeObj.loginReducer.userDetails.lastName} </h1>
     
-        <img src={`http://localhost:4321/${storeObj.loginReducer.userDetails.profilePic}`}></img>
+        <img src={`/${storeObj.loginReducer.userDetails.profilePic}`}></img>
      
       
         
